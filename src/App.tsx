@@ -17,20 +17,7 @@ function App() {
 
 
   const [links, setLinks] = useState<Link[]>([
-    {
-      id: 1,
-      name: "React Docs",
-      url: "https://react.dev",
-      description: "Official React documentation",
-      tag: "Docs",
-    },
-    {
-      id: 2,
-      name: "GitHub",
-      url: "https://github.com",
-      description: "Where my projects live",
-      tag: "Work",
-    },
+   
   ]);
 
   const [isLinkFormVisible, setShowLinkForm] = useState(false);
