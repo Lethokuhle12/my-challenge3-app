@@ -1,0 +1,13 @@
+.LinkForm-container{
+
+    background-color: white;
+    width:500px;
+    min-height: 200px;
+    max-height: 1000px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+
+}

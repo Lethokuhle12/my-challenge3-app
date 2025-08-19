@@ -1,0 +1,92 @@
+.card {
+    background: linear-gradient(45deg, #eee1e7, #5d3bbb);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;               /* stretch within the grid cell */
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.card a {
+  color: #4f5bd5;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+}
+
+.tag {
+  align-self: flex-start;
+  background: linear-gradient(45deg, #fa7e1e, #d62976, #962fbf);
+  color: white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.buttons {
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.8rem;
+  margin-top: auto;
+}
+
+.btn {
+  padding: 0.4rem 0.9rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.update {
+  background: #4f5bd5;
+  color: white;
+}
+
+.update:hover {
+  background: #3b46a3;
+}
+
+.delete {
+  background: #ff4d4d;
+  color: white;
+}
+
+.delete:hover {
+  background: #cc0000;
+}
+
+#item-container {
+  width: 100vw; 
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));
+  gap: 70px; 
+  box-sizing: border-box;
+}
